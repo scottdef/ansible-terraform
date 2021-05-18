@@ -23,10 +23,6 @@ resource "google_compute_instance" "tfansible" {
     network = "volt-net-hub"
   }
 
-  metadata {
-    Name     = "Terraform and Ansible Demo"
-    ssh-keys = "${var.ssh_user}:${file("${var.public_key_path}")}"
-  }
 
   metadata_startup_script = "echo hi > /test.txt"
 
