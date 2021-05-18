@@ -10,10 +10,10 @@ variable "private_key_path" {
 
 variable "project_name" {
   description = "Name of your GCP project.  Example: ansible-terraform-218216"
-  default     = "ansible-terraform-218216"
+  default     = "v2-dev-volusion"
 }
 
 variable "ssh_user" {
   description = "SSH user name to connect to your instance."
-  default     = "scarolan"
+  default     = "scott.defranc@volusion.com"
 }
