@@ -36,6 +36,7 @@ resource "google_compute_instance" "tfansible" {
   metadata_startup_script = "echo hi > /test.txt"
 
   service_account {
+    email  = "terraform-dev@v2-dev-volusion.iam.gserviceaccount.com"
     scopes = ["userinfo-email", "compute-ro", "storage-ro"]
   }
 
