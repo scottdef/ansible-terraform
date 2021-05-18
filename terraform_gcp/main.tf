@@ -15,10 +15,7 @@ resource "google_compute_instance" "tfansible" {
       image = "rhel-cloud/rhel-7"
     }
   }
-
-  // Local SSD disk
-  scratch_disk {}
-
+  
   network_interface {
     network = "volt-net-hub"
   }
