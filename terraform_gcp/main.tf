@@ -20,11 +20,7 @@ resource "google_compute_instance" "tfansible" {
   scratch_disk {}
 
   network_interface {
-    network = "default"
-
-    access_config {
-      // Ephemeral IP
-    }
+    network = "volt-net-hub"
   }
 
   metadata {
